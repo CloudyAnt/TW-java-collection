@@ -2,6 +2,7 @@ package com.thoughtworks.collection;
 
 import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
@@ -16,6 +17,16 @@ public class InverseReduce {
     }
 
     public List<Integer> divideToSmaller(int number) {
-        throw new NotImplementedException();
+        int interval = random.nextInt(3);
+
+        List<Integer> list = new ArrayList<>();
+        for (int i = 9; i >= 0;) {
+            i -= interval;
+            if (i >= 0) {
+                list.add(i);
+            }
+        }
+
+        return list;
     }
 }
