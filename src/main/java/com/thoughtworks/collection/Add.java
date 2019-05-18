@@ -146,7 +146,7 @@ public class Add {
         return all;
     }
 
-    private Integer[] bubbleSort(List<Integer> list) {
+    public Integer[] bubbleSort(List<Integer> list) {
         Integer[] array = list.toArray(new Integer[0]);
 
         for (int i = 0; i < array.length; i++) {
