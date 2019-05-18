@@ -56,11 +56,6 @@ public class MyMap {
 
     public List<Integer> sortFromBig() {
         Integer[] sortedArray = new Add().bubbleSort(array);
-        return new ArrayList<>(Arrays.asList(sortedArray));
-    }
-
-    public List<Integer> sortFromSmall() {
-        Integer[] sortedArray = new Add().bubbleSort(array);
         List<Integer> list = new ArrayList<>();
 
         for (int i = sortedArray.length - 1; i >=0 ; i--) {
@@ -68,6 +63,11 @@ public class MyMap {
         }
 
         return list;
+    }
+
+    public List<Integer> sortFromSmall() {
+        Integer[] sortedArray = new Add().bubbleSort(array);
+        return new ArrayList<>(Arrays.asList(sortedArray));
     }
 
     private char toChar(Integer integer) {
